@@ -1,0 +1,27 @@
+<div>
+    <u>
+        <li><a href="">Livros</a></li>
+        <li><a href="">Cadastrar</a></li>
+    </u>
+</div>
+
+{{#each book}}
+
+<div>
+    <div>
+        <h1>{{this.nome}}</h1>
+        <p>{{this.descricao}}</p>
+        <div>
+            <p>{{this.categoria}}</p>
+            <p>{{this.preco}}</p>
+        </div>
+        <div>
+            <input type="submit" value="Ver Detalhes">
+            <input type="submit" value="Editar">
+            <input type="submit" value="Excluir">
+        </div>
+    </div>
+</div>
+
+{{/each}}
+<p>Rodape</p>
